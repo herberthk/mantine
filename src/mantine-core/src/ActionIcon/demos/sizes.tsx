@@ -1,7 +1,7 @@
 import React from 'react';
-import { ActionIcon, Group } from '@mantine/core';
+import { ActionIcon, Group, SIZES } from '@mantine/core';
+import { CodeDemo } from '@mantine/docs';
 import { ImageIcon } from '@modulz/radix-icons';
-import CodeDemo from '../../../../components/CodeDemo/CodeDemo';
 
 const iconSizes = {
   xs: 12,
@@ -12,7 +12,7 @@ const iconSizes = {
 };
 
 const getSizes = (props: any) =>
-  ['xs', 'sm', 'md', 'lg', 'xl'].reverse().map((size) => (
+  SIZES.map((size) => (
     <ActionIcon key={size} size={size} {...props}>
       <ImageIcon style={{ width: iconSizes[size], height: iconSizes[size] }} />
     </ActionIcon>

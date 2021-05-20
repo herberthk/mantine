@@ -1,1 +1,1 @@
-export { ActionIcon } from './ActionIcon/demos';
+export * from './ActionIcon/demos';

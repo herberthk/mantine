@@ -1,7 +1,7 @@
 import React from 'react';
 import { ActionIcon, Group } from '@mantine/core';
+import { Configurator } from '@mantine/docs';
 import { GearIcon } from '@modulz/radix-icons';
-import Configurator from '../../../../components/Configurator/Configurator';
 
 const iconSizes = {
   xs: 12,
