@@ -1,21 +1,12 @@
 import React from 'react';
 import { Alert } from '@mantine/core';
-import CodeDemo from '../../../../components/CodeDemo/CodeDemo';
+import { CodeDemo } from '@mantine/docs';
 
-const code = `import React from 'react';
-import { Alert } from '@mantine/core';
+const code = `<Alert color="red" title="Something went wrong">
+  Alert with title
+</Alert>
 
-function Demo() {
-  return (
-    <>
-      <Alert color="red" title="Something went wrong">
-        Alert with title
-      </Alert>
-
-      <Alert color="red">Alert without title</Alert>
-    </>
-  );
-}`;
+<Alert color="red">Alert without title</Alert>`;
 
 export function AlertTitleDemo() {
   return (

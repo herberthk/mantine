@@ -1,6 +1,6 @@
 import React from 'react';
 import { Alert } from '@mantine/core';
-import Configurator from '../../../../components/Configurator/Configurator';
+import { Configurator } from '@mantine/docs';
 
 function AlertWrapper(props: React.ComponentPropsWithoutRef<typeof Alert>) {
   return (

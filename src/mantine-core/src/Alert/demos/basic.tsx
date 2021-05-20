@@ -1,6 +1,6 @@
 import React from 'react';
 import { Alert, Text } from '@mantine/core';
-import CodeDemo from '../../../../components/CodeDemo/CodeDemo';
+import { CodeDemo } from '@mantine/docs';
 
 const code = `import React from 'react';
 import { Alert, Text } from '@mantine/core';
@@ -21,7 +21,7 @@ function Demo() {
   );
 }`;
 
-export function AlertBaseDemo() {
+export function AlertBasicDemo() {
   return (
     <CodeDemo code={code} language="tsx">
       <div style={{ maxWidth: 400, margin: 'auto' }}>
