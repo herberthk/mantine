@@ -90,6 +90,7 @@
     "@modulz/radix-icons": "^4.0.0",
     "clsx": "^1.1.1",
     "lodash.debounce": "^4.0.8",
+    "prism-react-renderer": "^1.2.0",
     "react": "^16.14.0",
     "react-custom-scrollbars": "^4.2.1",
     "react-feather": "^2.0.9",
