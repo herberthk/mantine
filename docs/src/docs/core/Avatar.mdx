@@ -7,6 +7,7 @@ category: 'data-display'
 description: 'Display user profile image, initials or fallback icon'
 ---
 
+import { AvatarDemos } from '@demos/core';
 import { AVATAR_SIZES } from '@mantine/core';
 import {
   AvatarRootDemo,
@@ -15,7 +16,6 @@ import {
   AvatarLettersPlaceholderDemo,
 } from '../demos/core/Avatar/avatar.demos';
 import { AvatarConfigurator } from '../demos/core/Avatar/avatar.configurator';
-import { AvatarRadiusDemo } from '../demos/core/Avatar/avatar-radius.demo';
 import { AvatarSizesDemo } from '../demos/core/Avatar/avatar-sizes.demo';
 
 # Avatar
@@ -46,7 +46,7 @@ Alternatively you can use number to set radius in px:
 <Avatar radius={1000} /> // -> { borderRadius: 1000 }
 ```
 
-<AvatarRadiusDemo />
+<AvatarDemos.radius />
 
 ## Size
 
