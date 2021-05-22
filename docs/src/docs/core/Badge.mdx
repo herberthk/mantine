@@ -8,18 +8,7 @@ description: 'Display badge, pill or tag'
 ---
 
 import { BADGE_SIZES } from '@mantine/core';
-import {
-  BadgeBaseDemo,
-  BadgeLightVariantDemo,
-  BadgeOutlineVariantDemo,
-  BadgeFilledVariantDemo,
-  BadgeComposeDemo,
-  BadgeFullWidthDemo,
-  BadgeCustomComponentDemo,
-} from '../demos/core/Badge/badge.demos';
-import { BadgeSizesDemo } from '../demos/core/Badge/badge-sizes.demo';
-import { BadgeSectionsDemo } from '../demos/core/Badge/badge-sections.demo';
-import { BadgeRadiusDemo } from '../demos/core/Badge/badge-radius.demo';
+import { BadgeDemos } from '@demos/core';
 
 # Badge
 
@@ -43,19 +32,19 @@ Badge has 3 variants:
 
 Default Badge color is `theme.primaryColor`. You can choose any color defined in <GatsbyLink to="/pages/theming/">theme</GatsbyLink>.
 
-<BadgeBaseDemo />
+<BadgeDemos.base />
 
 ### Light variant
 
-<BadgeLightVariantDemo />
+<BadgeDemos.light />
 
 ### Outline variant
 
-<BadgeOutlineVariantDemo />
+<BadgeDemos.outline />{' '}
 
 ### Filled variant
 
-<BadgeFilledVariantDemo />
+<BadgeDemos.filled />
 
 ## Size
 
@@ -67,9 +56,9 @@ Size prop controls badge height, padding and font-size.
 <Badge size="xl" /> // -> predefined extra large size
 ```
 
-Badge sizes from xl to xs:
+Badge sizes from xs to xl:
 
-<BadgeSizesDemo />
+<BadgeDemos.sizes />
 
 You can get predefined badge heights by importing `BADGE_SIZES`:
 
@@ -92,33 +81,33 @@ Alternatively you can use number to set radius in px:
 <Badge radius={1000} /> // -> { borderRadius: 1000 }
 ```
 
-<BadgeRadiusDemo />
+<BadgeDemos.radius />
 
 ## Full width and overflow
 
 Badge can take full width of container if you pass `fullWidth` prop.
 If badge is too large for its container, overflow content will be hidden with ellipsis.
 
-<BadgeFullWidthDemo />
+<BadgeDemos.fullWidth />
 
 ## Right and left sections
 
 You can add any react node as right and left section to badge.
 Use it to add interactive parts (for example, remove button) or additional information:
 
-<BadgeSectionsDemo />
+<BadgeDemos.sections />
 
 ## Custom component
 
 You can change badge root element by passing React element to `component` prop.
 
-<BadgeCustomComponentDemo />
+<BadgeDemos.custom />
 
 ## Compose with Group
 
 You can compose Badge with itself and any other components with <GatsbyLink to="/core/group/">Group</GatsbyLink> component.
 
-<BadgeComposeDemo />
+<BadgeDemos.compose />
 
 ## Component props
 

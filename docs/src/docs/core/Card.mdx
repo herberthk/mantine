@@ -7,8 +7,7 @@ category: 'data-display'
 description: 'Display card with context styles for Image and Divider components'
 ---
 
-import { CardBaseDemo } from '../demos/core/Card/card-base.demo';
-import { CardOverlayDemo } from '../demos/core/Card/card-overlay.demo';
+import { CardDemos } from '@demos/core';
 
 # Card
 
@@ -24,7 +23,7 @@ Card component is a wrapper around <GatsbyLink to="/core/paper/">Paper</GatsbyLi
 with context styles for <GatsbyLink to="/core/image/">Image</GatsbyLink> and <GatsbyLink to="/core/divider/">Divider</GatsbyLink>
 components. Combine Card component with other Mantine components to create product cards:
 
-<CardBaseDemo />
+<CardDemos.base />
 
 ## Link overlay
 
@@ -32,7 +31,7 @@ Use <GatsbyLink to="/core/overlay/">Overlay</GatsbyLink> component with 0 opacit
 to create link overlay. Note that, card context styles (negative margins and border-radius) rely on `:fist-child` and `:last-child`,
 if you need preserve them, do not put overlay as first or last element.
 
-<CardOverlayDemo />
+<CardDemos.overlay />
 
 ## Get element ref
 

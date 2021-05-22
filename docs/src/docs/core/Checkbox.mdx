@@ -8,9 +8,7 @@ description: 'Capture boolean input from user'
 ---
 
 import { CHECKBOX_SIZES } from '@mantine/core';
-import { CheckboxIndeterminateDemo } from '../demos/core/Checkbox/checkbox-indeterminate.demo';
-import { CheckboxConfigurator } from '../demos/core/Checkbox/checkbox.configurator';
-import { CheckboxSizesDemo } from '../demos/core/Checkbox/checkbox-sizes.demo';
+import { CheckboxDemos } from '@demos/core';
 
 # Checkbox
 
@@ -29,7 +27,7 @@ import { Checkbox } from '@mantine/core';
 Use Checkbox to capture boolean value input from user.
 For better accessibility set `label` prop, it will add associated label element.
 
-<CheckboxConfigurator />
+<CheckboxDemos.configurator />
 
 ## Sizes
 
@@ -42,7 +40,7 @@ Size defines label font-size (from <GatsbyLink to="/pages/theming/">theme.fontSi
 
 Checkbox sizes from xs to xl:
 
-<CheckboxSizesDemo />
+<CheckboxDemos.sizes />
 
 You can get checkbox sizes by importing `CHECKBOX_SIZES`:
 
@@ -60,7 +58,7 @@ import { CHECKBOX_SIZES } from '@mantine/core';
 Checkbox supports indeterminate state. When `indeterminate` prop is set to true,
 `checked` prop is ignored:
 
-<CheckboxIndeterminateDemo />
+<CheckboxDemos.indeterminate />
 
 ## Controlled
 

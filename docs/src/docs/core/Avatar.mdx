@@ -9,14 +9,6 @@ description: 'Display user profile image, initials or fallback icon'
 
 import { AvatarDemos } from '@demos/core';
 import { AVATAR_SIZES } from '@mantine/core';
-import {
-  AvatarRootDemo,
-  AvatarPlaceholderDemo,
-  AvatarIconPlaceholderDemo,
-  AvatarLettersPlaceholderDemo,
-} from '../demos/core/Avatar/avatar.demos';
-import { AvatarConfigurator } from '../demos/core/Avatar/avatar.configurator';
-import { AvatarSizesDemo } from '../demos/core/Avatar/avatar-sizes.demo';
 
 # Avatar
 
@@ -34,7 +26,7 @@ import { Avatar } from '@mantine/core';
 
 Use Avatar to display user profile image, initials or fallback icon.
 
-<AvatarRootDemo />
+<AvatarDemos.root />
 
 ## Radius
 
@@ -60,7 +52,7 @@ You can pass size as number and it will be set as width and height in px:
 
 Predefined avatar sizes from xs to xl:
 
-<AvatarSizesDemo />
+<AvatarDemos.sizes />
 
 You can get predefined Avatar sizes by importing `AVATAR_SIZES`:
 
@@ -73,13 +65,13 @@ import { AVATAR_SIZES } from '@mantine/core';
   data={Object.keys(AVATAR_SIZES).map((size) => [size, `${AVATAR_SIZES[size]}px`])}
 />
 
-<AvatarConfigurator />
+<AvatarDemos.configurator />
 
 ## Placeholder
 
 If `src` prop is not set, equals to null or image cannot be loaded, placeholder icon will be rendered instead.
 
-<AvatarPlaceholderDemo />
+<AvatarDemos.placeholder />
 
 ## Custom placeholders
 
@@ -89,11 +81,11 @@ You can choose any color defined in <GatsbyLink to="/pages/theming/">theme</Gats
 
 ### Placeholder icon
 
-<AvatarIconPlaceholderDemo />
+<AvatarDemos.iconPlaceholder />
 
 ### Placeholder letters
 
-<AvatarLettersPlaceholderDemo />
+<AvatarDemos.lettersPlaceholder />
 
 ## Accessibility
 

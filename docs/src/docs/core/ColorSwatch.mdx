@@ -7,9 +7,7 @@ category: 'data-display'
 description: 'Display color value'
 ---
 
-import { ColorSwatchBaseDemo } from '../demos/core/ColorSwatch/color-swatch.demos';
-import { ColorSwatchComponentDemo } from '../demos/core/ColorSwatch/color-swatch-component.demo';
-import { ColorSwatchRadiusDemo } from '../demos/core/ColorSwatch/color-swatch-radius.demo';
+import { ColorSwatchDemos } from '@demos/core';
 
 # ColorSwatch
 
@@ -33,7 +31,7 @@ Use ColorSwatch to display color:
 
 Example with default Mantine theme colors:
 
-<ColorSwatchBaseDemo />
+<ColorSwatchDemos.base />
 
 ## Size
 
@@ -53,13 +51,13 @@ Alternatively you can use number to set radius in px:
 <ColorSwatch radius={10} /> // -> { borderRadius: 10 }
 ```
 
-<ColorSwatchRadiusDemo />
+<ColorSwatchDemos.radius />
 
 ## Custom component
 
 Use any component or element with ColorSwatch by setting `component` prop:
 
-<ColorSwatchComponentDemo />
+<ColorSwatchDemos.component />
 
 ## Get element ref
 

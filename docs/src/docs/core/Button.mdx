@@ -8,18 +8,7 @@ description: 'Render button or link with button styles from mantine theme'
 ---
 
 import { BUTTON_SIZES } from '@mantine/core';
-import { GroupConfigurator } from '../demos/core/Group/group.configurator';
-import { ButtonFullWidthDemo } from '../demos/core/Button/button-width.demo';
-import { ButtonComponentsDemo } from '../demos/core/Button/button-components.demo';
-import { ButtonSizesDemo } from '../demos/core/Button/button-sizes.demo';
-import { ButtonRadiusDemo } from '../demos/core/Button/button-radius.demo';
-import {
-  ButtonFilledVariantDemo,
-  ButtonOutlineVariantDemo,
-  ButtonLinkVariantDemo,
-  ButtonLightVariantDemo,
-} from '../demos/core/Button/button-colors.demo';
-import { ButtonConfigurator } from '../demos/core/Button/button.configurator';
+import { ButtonDemos, GroupDemos } from '@demos/core';
 
 # Button
 
@@ -35,7 +24,7 @@ import { Button } from '@mantine/core';
 
 ## Usage
 
-<ButtonConfigurator />
+<ButtonDemos.configurator />
 
 ## Variants and colors
 
@@ -55,19 +44,19 @@ Default Button color is `theme.primaryColor`, to change color and variant pass `
 
 ### Filled variant
 
-<ButtonFilledVariantDemo />
+<ButtonDemos.filled />
 
 ### Light variant
 
-<ButtonLightVariantDemo />
+<ButtonDemos.light />
 
 ### Outline variant
 
-<ButtonOutlineVariantDemo />
+<ButtonDemos.outline />
 
 ### Link variant
 
-<ButtonLinkVariantDemo />
+<ButtonDemos.link />
 
 ## Size
 
@@ -79,9 +68,9 @@ Size prop controls button height, padding and font-size.
 <Button size="xl" /> // -> predefined extra large size
 ```
 
-Button sizes from xl to xs:
+Button sizes from xs to xl:
 
-<ButtonSizesDemo />
+<ButtonDemos.sizes />
 
 You can get predefined button heights by importing `BUTTON_SIZES`:
 
@@ -107,26 +96,26 @@ Alternatively you can use number to set border-radius in px:
 
 Predefined button radius from xs to xl for Button with lg size:
 
-<ButtonRadiusDemo />
+<ButtonDemos.radius />
 
 ## Full width and overflow
 
 Button can take full width of container if you pass `fullWidth` prop.
 If button is too large for its container, overflow content will be hidden with ellipsis.
 
-<ButtonFullWidthDemo />
+<ButtonDemos.fullWidth />
 
 ## Compose with Group
 
 You can compose Button with itself any other components with <GatsbyLink to="/core/group/">Group</GatsbyLink> component:
 
-<GroupConfigurator />
+<GroupDemos.configurator />
 
 ## Change root element
 
 You can use Button component both as `button` and `a` elements:
 
-<ButtonComponentsDemo />
+<ButtonDemos.components />
 
 ## Usage with react-router and other libraries
 

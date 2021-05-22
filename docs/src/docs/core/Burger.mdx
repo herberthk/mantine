@@ -8,9 +8,7 @@ description: 'Display open/close navigation button'
 ---
 
 import { BURGER_SIZES } from '@mantine/core';
-import { BurgerBaseDemo } from '../demos/core/Burger/burger.demos';
-import { BurgerSizesDemo } from '../demos/core/Burger/burger-sizes.demo';
-import { BurgerConfigurator } from '../demos/core/Burger/burger.configurator';
+import { BurgerDemos } from '@demos/core';
 
 # Burger
 
@@ -30,7 +28,7 @@ Burger component renders open/close menu button.
 Pass `opened` and `onClick` props to control Burger state.
 If `opened` prop is set to true cross will be rendered, otherwise – burger.
 
-<BurgerBaseDemo />
+<BurgerDemos.base />
 
 ## Size
 
@@ -42,9 +40,9 @@ You can pass size as number and it will be set as width and height in px.
 <Burger size={50} /> // -> { width: 50, height: 50 }
 ```
 
-Predefined sizes from xl to xs:
+Predefined sizes from xs to xl:
 
-<BurgerSizesDemo />
+<BurgerDemos.sizes />
 
 You can get default sizes by importing `BURGER_SIZES`:
 
@@ -61,7 +59,7 @@ import { BURGER_SIZES } from '@mantine/core';
 
 Default Burger color is gray. You can choose any color defined in <GatsbyLink to="/pages/theming/">theme.colors</GatsbyLink>:
 
-<BurgerConfigurator />
+<BurgerDemos.configurator />
 
 ## Get element ref
 

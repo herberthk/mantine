@@ -7,7 +7,7 @@ category: 'typography'
 description: 'Display inline or block code'
 ---
 
-import { CodeInlineDemo, CodeBlockDemo, CodeColorDemo } from '../demos/core/Code/code.demos';
+import { CodeDemos } from '@demos/core';
 
 # Code
 
@@ -21,19 +21,19 @@ import { Code } from '@mantine/core';
 
 By default Code component renders inline `code` html element:
 
-<CodeInlineDemo />
+<CodeDemos.inline />
 
 ## Block code
 
 To render code in `pre` element pass `block` prop to Code component:
 
-<CodeBlockDemo />
+<CodeDemos.block />
 
 ## Custom color
 
 By default code has gray color, you can change it to any color from <GatsbyLink to="/pages/theming/">theme</GatsbyLink>:
 
-<CodeColorDemo />
+<CodeDemos.color />
 
 ## Component props
 

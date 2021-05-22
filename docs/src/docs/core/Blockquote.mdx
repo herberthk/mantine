@@ -7,11 +7,7 @@ category: 'typography'
 description: 'Display quote with optional cite'
 ---
 
-import {
-  BlockquoteIconDemo,
-  BlockquoteNoIconDemo,
-} from '../demos/core/Blockquote/blockquote.demos';
-import { BlockquoteConfigurator } from '../demos/core/Blockquote/blockquote.configurator';
+import { BlockquoteDemos } from '@demos/core';
 
 # Blockquote
 
@@ -29,7 +25,7 @@ import { Blockquote } from '@mantine/core';
 
 You can choose any color defined in <GatsbyLink to="/pages/theming/">theme</GatsbyLink>. By default Blockquote will use `theme.primaryColor` value.
 
-<BlockquoteConfigurator />
+<BlockquoteDemos.configurator />
 
 ## Configure icon
 
@@ -42,11 +38,11 @@ You can use icons from any react icons library, for example:
 - [feather](https://feathericons.com/)
 - [react-icons](https://react-icons.github.io/react-icons)
 
-<BlockquoteIconDemo />
+<BlockquoteDemos.icon />
 
 By default blockquote uses quote icon, to disable it, set `icon` prop to null:
 
-<BlockquoteNoIconDemo />
+<BlockquoteDemos.noIcon />
 
 ## Component props
 
